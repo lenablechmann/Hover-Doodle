@@ -12,8 +12,8 @@ An Etch-A-Sketch web app.
   - user should be able to define the resolution (div amount)
   - user should be able to clear/reset the area
   - (*optional*) add a simple color palette
-- [ ] draw a simple wireframe
-- [ ] create a minimalistic and intuitive layout in figma
+- [x] draw a simple wireframe/layout sketch ![layout sketch](images/layoutSketch.png)
+- [x] create a layout in figma ![figma layout](images/figmaLayout.png)
 - [ ] structure your html
 - [ ] write pseudocode for js
 - [ ] apply basic grid to the web page (color the grid parts)
