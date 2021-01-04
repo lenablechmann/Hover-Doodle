@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Add responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hover Doodle</title>
+
+  <!-- css styles -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- fonts -->
+</head>
+
+<body>
+  <header>
+      <button type="button" id="clear" class="buttons">Clear</button>
+      <button type="button" id="red" class="palette">Red</button>
+      <button type="button" id="green" class="palette">Green</button>
+      <button type="button" id="blue" class="palette">Blue</button>
+      <button type="button" id="black" class="palette">Black</button>
+  </header>
+  <section>
+      <div  id="sketch-pad">
+
+      </div>
+  </section>
+
+  <footer>
+      <input type="number" class="fill-out" id="user-resolution" placeholder="Choose Canvas Resolution" min="16" max="64">
+      <input type="submit" value="Resize">
+  </footer>
+</body>
+</html>

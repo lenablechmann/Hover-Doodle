@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile first approach */
+body {
+    font-size: 100%;
+    display: grid;
+    grid-template-areas: "header"
+                         "section"
+                         "footer"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 50% 25%;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    background-color: rgb(162, 224, 224);
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 227, 175);
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    background-color: rgb(216, 150, 216);
+
+}
+
+#sketch-pad {
+    border:solid 10px rgb(75, 71, 71);
+    background-color: rgb(159, 173, 255);
+    display: flex;
+    flex-flow: wrap;
+    width: 300px;
+    height: 300px;
+}

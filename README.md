@@ -14,10 +14,10 @@ An Etch-A-Sketch web app.
   - (*optional*) add a simple color palette
 - [x] draw a simple wireframe/layout sketch ![layout sketch](images/layoutSketch.png)
 - [x] create a layout in figma ![figma layout](images/figmaLayout.png)
-- [ ] structure your html
+- [x] structure your html
 - [ ] write pseudocode for js
-- [ ] apply basic grid to the web page (color the grid parts)
-- [ ] make sure to leave a grid area for the sketch pad (div), where the js will create 16x16 divs (use flexbox wrap)
+- [x] apply basic grid to the web page (color the grid parts) ![colored grid layout in the browser](images/gridBrowserBG.png)
+- [x] make sure to leave a grid area for the sketch pad (div), where the js will create 16x16 divs (use flexbox wrap)
 - [ ] set up a hover effect in JS for the sketch area either by adding a new class or a new background color style
 - [ ] let the user clear the sketch pad
 - [ ] let the user choose resolution
