@@ -1,16 +1,19 @@
 // create a variable resolution, which will save user input from the #user-resolution
 document.addEventListener('DOMContentLoaded', function() {
-    let resolution = 16;
+    let resolution = 20;
     createGrid(resolution);
 });
 
 function createGrid(resolution){
     const canvas = document.querySelector('#sketch-pad');
-        for (let column = 0; column < resolution * resolution; column++){
-            let pixel = document.createElement('div');
-            pixel.classList.add('pixel');
-            canvas.appendChild(pixel);
-        }
+    // dynamically changing resolution of the css grid
+    canvas.style.gridTemplate = `repeat(${resolution}, 1fr) / repeat(${resolution}, 1fr)`
+    // creating the grid
+    for (let column = 0; column < resolution * resolution; column++){
+        let pixel = document.createElement('div');
+        pixel.classList.add('pixel');
+        canvas.appendChild(pixel);
+    }
 }
 // it should be 16 default, but user will be able to change it
 
