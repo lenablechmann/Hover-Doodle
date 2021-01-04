@@ -48,3 +48,10 @@ footer {
     width: 300px;
     height: 300px;
 }
+
+.pixel {
+    border: solid 1px rgb(157, 158, 163);
+    background-color: beige;
+    width: 10px;
+    height: 10px;
+}
