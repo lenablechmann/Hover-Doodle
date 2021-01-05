@@ -12,7 +12,7 @@ body {
     ;
     grid-template-columns: 100%;
     /* auto keeps the middle section stable */
-    grid-template-rows: 20% auto 40%;
+    grid-template-rows: 20% auto 38%;
     width: 100vw;
     height: 100vh;
 }
@@ -35,21 +35,23 @@ section {
 footer {
     grid-area: footer;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: first baseline;
+    align-items: baseline;
+    justify-content: center;
     font-family: 'Lato', sans-serif;
-    color:#60A477;
+    color:#46885c;
     font-weight: bold;
     font-size: 1.3em;
 }
 
-footer > p {
-    padding: 0.3em;
+form {
+    display: flex;
+    align-items: center;
+
 }
 
+
 #sketch-pad {
-    border:solid 10px #60A477;
+    border:solid 10px#53755f;
     border-radius: 6px;
     width: 350px;
     height: 350px;
@@ -67,26 +69,38 @@ footer > p {
 
 .slider {
     -webkit-appearance: none;
-    width: 350px;
-    height: 24px;
+    width:200px;
+    height: 8px;
     border-radius: 6px;
-    border: solid 1px #60A477;
-    background: #ffffff;
+    border: solid 1px#ffffff;
+    background: #53755f;
+    margin-right: 1em;
   }
   
   
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 26px;
-    height: 25px;
-    background: #60A477;
+    width: 20px;
+    height: 20px;
+    background: #53755f;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
-    width: 26px;
-    height: 26px;
-    background: #60A477;
+    width: 20px;
+    height: 20px;
+    background:#53755f;
     cursor: pointer;
+  }
+
+  .submit {
+      border: none;
+      border-radius: 5px;
+      background-color: #53755f;
+      padding: 0.6em 0.6em 0.6em 0.6em;
+      font-family: 'Lato', sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 0.8em;
   }
