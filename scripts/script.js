@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    document.getElementById("clear").onclick = clearCanvas;
+
     /* using localStorage to save user resolution choice, otherwise site resets on 
      submit. tried "return false" on form submit, but the grid wont fill fully */
     if(!localStorage.getItem('resolution')) {
@@ -66,4 +68,12 @@ function recolorPixels(color){
             element.style.backgroundColor = color;
         });
     });
+}
+
+function clearCanvas(){
+    console.log("so you wanna clear it huh");
+    const pixelsArray = document.querySelectorAll('.pixel');
+    pixelsArray.forEach((element) => {
+            element.style.backgroundColor = "white";
+        });
 }
