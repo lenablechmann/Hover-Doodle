@@ -1,23 +1,48 @@
-// create a variable resolution, which will save user input from the #user-resolution
 document.addEventListener('DOMContentLoaded', function() {
-        if(!localStorage.getItem('resolution')) {
-        // using localStorage to save user choice, otherwise site resets on 
-        // submit. tried "return false" on form submit, but the grid wont fill fully
+    let color = "black";
+    const paletteColor = document.querySelectorAll(".palette");
+    paletteColor.forEach((button) => {
+        // get undefined when I use arrow function here
+        button.addEventListener('click', function (event){ 
+            // making of palette button colors
+            console.log(this.id);
+            switch (parseInt(this.id)){
+            case 1:
+                color = "navy";
+                break;
+            case 2 :
+                color = "maroon";
+                break;
+            case 3 :
+                color = "oliveDrab"
+                break;
+            case 4:
+                color = "black"
+                break;
+            }
+            recolorPixels(color);
+        });
+    });
+
+    /* using localStorage to save user resolution choice, otherwise site resets on 
+     submit. tried "return false" on form submit, but the grid wont fill fully */
+    if(!localStorage.getItem('resolution')) {
         localStorage.setItem('resolution', 16);
     }
+
     let resolution = localStorage.getItem('resolution');
     createCanvasGrid(resolution);
-    // accomodate for the updated resolution on the resolution slider starter value
 
     document.querySelector("form").onsubmit = function (){
-        // changes canvas size upon user slider change
+        // changes canvas size upon user slider change + submit (which are all part of the form)
         resolution = parseInt(document.querySelector('#range-slider').value);
         createCanvasGrid(resolution);
         localStorage.setItem('resolution', resolution);
     };
 
+    // the drawing function gets called once user hovers over the parent div of all
     let sketchPad = document.querySelector('#sketch-pad');
-    sketchPad.addEventListener('mouseenter', recolorPixel);
+    sketchPad.addEventListener('mouseenter', recolorPixels(color));
 });
 
 function createCanvasGrid(resolution){
@@ -32,20 +57,13 @@ function createCanvasGrid(resolution){
     }
 }
 
-function recolorPixel(){
+function recolorPixels(color){
     console.log("wow, you hovered over the canvas!");
     
     const pixelsArray = document.querySelectorAll('.pixel');
     pixelsArray.forEach((element) => {
         element.addEventListener('mouseenter', () => {
-            console.log("ooh, a pixel");
-            element.style.backgroundColor = 'black';
+            element.style.backgroundColor = color;
         });
     });
 }
-
-// the same function should be called if user changes resolution with the form
-
-// change class of the created divs on hover
-
-// create various classes for the palette and change the class depending on user choice
