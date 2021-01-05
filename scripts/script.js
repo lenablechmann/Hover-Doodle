@@ -33,12 +33,13 @@ function createCanvasGrid(resolution){
 }
 
 function recolorPixel(){
-    console.log("wow, you hovered");
+    console.log("wow, you hovered over the canvas!");
     
     const pixelsArray = document.querySelectorAll('.pixel');
     pixelsArray.forEach((element) => {
         element.addEventListener('mouseenter', () => {
-            console.log("ooh a pixel");
+            console.log("ooh, a pixel");
+            element.style.backgroundColor = 'black';
         });
     });
 }
