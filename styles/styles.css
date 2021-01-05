@@ -20,7 +20,7 @@ body {
 header {
     grid-area: header;
     display: flex;
-    align-items: last baseline;
+    align-items: flex-end;
     justify-content: center;
     margin-bottom: 0.5em;
 }

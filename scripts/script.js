@@ -1,15 +1,19 @@
 // create a variable resolution, which will save user input from the #user-resolution
 document.addEventListener('DOMContentLoaded', function() {
-    // resolution is 16x16 (range slider starter value) default     
-    let resolution = document.querySelector('#range-slider').value;
+        if(!localStorage.getItem('resolution')) {
+        // using localStorage to save user choice, otherwise site resets on 
+        // submit. tried return false on form submit, but the grid wont fill fully
+        localStorage.setItem('resolution', 16);
+    }
+    let resolution = localStorage.getItem('resolution');
     createCanvasGrid(resolution);
 
     document.querySelector("form").onsubmit = function (){
-        // save user resolution choice depending on their slider input
-        resolution = document.querySelector('#range-slider').value;
+        // changes canvas size upon user slider change
+        resolution = parseInt(document.querySelector('#range-slider').value);
         createCanvasGrid(resolution);
+        localStorage.setItem('resolution', resolution);
     };
-
 });
 
 function createCanvasGrid(resolution){
