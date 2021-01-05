@@ -64,7 +64,8 @@ form {
 }
 
 .pixel{
-    border: solid 1px rgb(240, 238, 234);
+    border: solid 1px rgb(214, 212, 208);
+    background-color: white;
 }
 
 
