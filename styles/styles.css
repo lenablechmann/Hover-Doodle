@@ -22,6 +22,7 @@ header {
     display: flex;
     align-items: last baseline;
     justify-content: center;
+    margin-bottom: 0.5em;
 }
 
 section {
@@ -46,7 +47,7 @@ footer {
 form {
     display: flex;
     align-items: center;
-
+    margin-top: 0.5em;
 }
 
 
@@ -69,11 +70,10 @@ form {
 
 .slider {
     -webkit-appearance: none;
-    width:200px;
-    height: 8px;
+    width:208px;
+    height: 25px;
     border-radius: 6px;
-    border: solid 1px#ffffff;
-    background: #53755f;
+    border: solid 1px #53755f;
     margin-right: 1em;
   }
   
@@ -81,15 +81,15 @@ form {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: #53755f;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background:#53755f;
     cursor: pointer;
   }

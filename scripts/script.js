@@ -1,8 +1,15 @@
 // create a variable resolution, which will save user input from the #user-resolution
 document.addEventListener('DOMContentLoaded', function() {
-    // resolution should be 16x16 default, but user will be able to change it
-    let resolution = 16;
+    // resolution is 16x16 (range slider starter value) default     
+    let resolution = document.querySelector('#range-slider').value;
     createCanvasGrid(resolution);
+
+    document.querySelector("form").onsubmit = function (){
+        // save user resolution choice depending on their slider input
+        resolution = document.querySelector('#range-slider').value;
+        createCanvasGrid(resolution);
+    };
+
 });
 
 function createCanvasGrid(resolution){
