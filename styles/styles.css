@@ -25,6 +25,50 @@ header {
     margin-bottom: 0.5em;
 }
 
+.palette {
+    padding: 1.3em;
+    margin-left: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px #afafaf;
+}
+.palette:active {
+    box-shadow: 0 2px rgb(160, 157, 157);
+    transform: translateY(2px);
+}
+.palette.maroon {
+    background-color: maroon;
+}
+.palette.navy {
+    background-color: navy;
+}
+.palette.olive {
+    background-color: olivedrab;
+}
+.palette.black {
+    background-color: black;
+}
+#clear {
+      border: none;
+      border-radius: 5px;
+      background-color: #2e6c75;
+      padding: 0.6em 0.6em 0.5em 0.6em;
+      font-family: 'Lato', sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 3px #afafaf;
+      margin-right: 5.9em;
+      margin-bottom: -0.1em;
+}
+
+#clear:active {
+    box-shadow: 0 2px rgb(160, 157, 157);
+    transform: translateY(2px);
+}
+
 section {
     grid-area: section;
     min-height: 355px;
@@ -52,7 +96,7 @@ form {
 
 
 #sketch-pad {
-    border:solid 10px#53755f;
+    border:solid 10px#2e6c75;
     border-radius: 6px;
     width: 350px;
     height: 350px;
@@ -74,7 +118,7 @@ form {
     width:208px;
     height: 25px;
     border-radius: 6px;
-    border: solid 1px #53755f;
+    border: solid 1px #2e6c75;
     margin-right: 1em;
   }
   
@@ -84,24 +128,30 @@ form {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #53755f;
+    background: #2e6c75;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background:#53755f;
+    background:#2e6c75;
     cursor: pointer;
   }
 
   .submit {
       border: none;
       border-radius: 5px;
-      background-color: #53755f;
+      background-color: #2e6c75;
       padding: 0.6em 0.6em 0.6em 0.6em;
       font-family: 'Lato', sans-serif;
       color: white;
       font-weight: bold;
       font-size: 0.8em;
+        cursor: pointer;
+        box-shadow: 0 3px #afafaf;
   }
+.submit:active {
+    box-shadow: 0 2px rgb(160, 157, 157);
+    transform: translateY(2px);
+}
