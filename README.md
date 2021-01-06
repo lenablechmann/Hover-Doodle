@@ -23,7 +23,7 @@ An Etch-A-Sketch web app. Hover over the canvas to doodle away. Choose colors by
 - [x] let the user choose resolution
 - [x] tweak up the css
 
-## Possible things to work on in the future
+## Things to work on in the future
 - starting value of the slider should represent the current resolution
-- possibly a Hover Doodle Logo on top of the page
-- 
+- Hover Doodle Logo on top of the page
+- add "hover" state for touch screen devices, mouseover event works with mouse only (who would have thought)
