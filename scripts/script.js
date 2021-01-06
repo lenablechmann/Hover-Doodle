@@ -67,6 +67,9 @@ function recolorPixels(color){
         element.addEventListener('mouseenter', () => {
             element.style.backgroundColor = color;
         });
+        element.addEventListener('click', () => {
+            element.style.backgroundColor = color;
+        });
     });
 }
 
