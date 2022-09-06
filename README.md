@@ -1,5 +1,5 @@
 # Hover-Doodle
-An Etch-A-Sketch web app. Hover over the canvas to doodle away. Choose colors by clicking on the palette.
+An Etch-A-Sketch web app. Hover over the canvas to doodle away. Choose colors by clicking on the palette. Live App can be found here: https://lenablechmann.github.io/Hover-Doodle/
 
 ## Learning Goals
 - get proficient at DOM manipulation with JS
